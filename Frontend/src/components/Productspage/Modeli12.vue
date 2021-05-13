@@ -1,7 +1,7 @@
 <template>
      <div class="grid md:grid-cols-2  py-5 justify-items-center">
         <div class="place-self-center text-center md:pl-10 order-last md:order-none">
-          <p class="ModelName text-2xl md:text-4xl mt-4 md:mt-0">iphone 12</p>
+          <p class="ModelName text-2xl md:text-4xl mt-4 md:mt-0">iPhone 12</p>
           <router-link to="/productdetail/12model">
           <BaseButton
             buttonLabel="+ View more"

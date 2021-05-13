@@ -1,8 +1,9 @@
 <template>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <div id="container">
     <navlanding-page></navlanding-page>
     
-    <div id="nav" class="md:pt-6 pt-2  md:text-xl text-xs ">
+    <div id="nav" class="md:pt-6 pt-2  md:text-xl text-md ">
       <router-link to="/">HOME</router-link>
       <router-link to="/products" class="lg:ml-24 md:ml-10 ml-4">PRODUCTS</router-link>
       <router-link to="/stock" class="lg:ml-24 md:ml-10 ml-4">STOCKS</router-link>
@@ -25,6 +26,7 @@ p{
 #container {
   padding: 30px;
   text-align: center;
+  object-fit: contain;
 }
 
 #container a {

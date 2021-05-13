@@ -83,8 +83,8 @@
             accept=".jpg, .png, .svg"
             name="imgSrc"
             @change="uploadPhoto"
-            class="absolute top-0 left-0 h-10 opacity-0"
-          />
+            class="absolute top-0 left-0 h-14 opacity-0"
+          >
           <!-- <i class="text-sm text-red-500" v-if="errors">{{ errors.src }}</i> -->
         </div>
         <p
@@ -632,6 +632,8 @@ export default {
           method:'POST',
           body: formData
         })
+
+        res.status === 403 ? alert(`Product name ${this.imageName.name} is already exists`) : console.log(res);
         res.status === 404 ? alert(`Product name ${this.casename} is already exists`) : console.log(res);
 
         this.fetchStock();

@@ -45,12 +45,10 @@ public class ProductController {
 
     @GetMapping("/stock/{id}")
     public Product findById(@PathVariable int id) {
-        try{
-            return productRepository.findById(id).get();
-        }catch(NoSuchElementException ex){
+        if(productRepository.existsById(id)){
             throw new ResponseStatusException(HttpStatus.NOT_FOUND,String.format("Product id: " + id + " does not exist."));
         }
-
+    return productRepository.findById(id).get();
     }
 
     @PostMapping("/stock/add")

@@ -6,7 +6,7 @@
           class="w-6/12 md:w-7/12 lg:w-6/12 h-auto place-self-center "
         />
         <div class="place-self-center text-center md:pr-10 ">
-          <p class="ModelName text-2xl md:text-4xl mt-4 md:mt-0">iphone 12 Pro</p>
+          <p class="ModelName text-2xl md:text-4xl mt-4 md:mt-0">iPhone 12 Pro</p>
           <router-link to="/ProductDetail/12pro">
           <BaseButton
             buttonLabel="+ View more"

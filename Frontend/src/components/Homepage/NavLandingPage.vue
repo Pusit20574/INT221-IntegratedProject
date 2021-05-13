@@ -1,6 +1,6 @@
 <template>
     <div>
-      <p class="lg:text-5xl text-xl md:text-3xl font-medium md:pt-3 pb-5">CaseCoolors</p>
+      <p class="lg:text-5xl text-3xl pb-5 md:text-3xl font-medium md:pt-3 lg:pb-10">CaseCoolors</p>
     </div>
 </template>
 
